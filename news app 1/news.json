@@ -1,20 +1,14 @@
-[News1]
-struct News: Codable {
-    var image: String
-    var title: String
-}
-
 [
    {
-       "image": "binanceNewsImage",
-       "title": "hjvc efguuy gfwi",
+       "image": "newsImg",
+       "title": "Title 1"
    },
    {
-       "image": "lupa",
-       "title": "qbxqbxuqwxnoqxpqxjqwo[wxjjkqjqeoi",
+       "image": "newsImg",
+       "title": "Title 2"
    },
    {
-       "image": "news launch screen",
-       "title": "qi1hh829002o=-1w1[]w'ls1';,m2lecm2e;co",
+       "image": "newsImg",
+       "title": "Title 3"
    }
 ]

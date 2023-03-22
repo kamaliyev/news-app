@@ -12,3 +12,9 @@ struct Login {
     var email: String
     var password: String
 }
+
+struct News: Codable {
+    var image: String
+    var title: String
+    
+}

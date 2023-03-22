@@ -6,28 +6,25 @@
 //
 
 import UIKit
-
 class HomeViewController: UIViewController {
-    @IBOutlet weak var HomeCollection: UICollectionView!
-        
+    
+    var items = [News]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    var items = [News]()
+                        
+        newsJsonFile()
+    }
     
-    newsJsonFile()
-}
-func newsJsonFile() {
-    if let jsonFile = Bundle.main.url(forResource: "news", withExtension: "json") {
-        let saveData = try? Data(contentsOf: jsonFile)
-        do {
-            try JSONDecoder().decode([News].self, from: saveData)
-        } catch  {
-            print(error.localizedDescription)
+    func newsJsonFile() {
+        if let jsonFile = Bundle.main.url(forResource: "news", withExtension: "json"),
+           let saveData = try? Data(contentsOf: jsonFile) {
+            do {
+                items;  try JSONDecoder().decode([News].self, from: saveData)
+            } catch  {
+                print(error.localizedDescription)
+            }
         }
     }
 }
-}
-
 
