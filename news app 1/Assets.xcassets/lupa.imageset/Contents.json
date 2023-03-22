@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "476-4765418_magnifying-glass-search-icono-lupa-busqueda-hd-png.png.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
