@@ -84,8 +84,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ySX-UY-4Ab" colorLabel="IBBuiltInLabel-Blue">
-                                <rect key="frame" x="0.0" y="236" width="393" height="626"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ySX-UY-4Ab" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="0.0" y="226" width="393" height="626"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t9V-um-iJg">
                                     <size key="itemSize" width="408" height="156"/>
@@ -94,25 +94,24 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="dxG-OY-L9V" customClass="CollectionViewCell" customModule="news_app_1" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ehs-FS-GQA">
                                         <rect key="frame" x="-7.666666666666667" y="0.0" width="408" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CsM-PD-eB2" customClass="CollectionViewCell" customModule="news_app_1" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bTe-0z-Xu0" customClass="CollectionViewCell">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="156"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tEQ-mU-KXT">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ijw-DG-8vd">
                                                     <rect key="frame" x="0.0" y="0.0" width="408" height="156"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tEQ-mU-KXT" firstAttribute="top" secondItem="CsM-PD-eB2" secondAttribute="top" id="3Zm-yx-vzh"/>
-                                                <constraint firstAttribute="trailing" secondItem="tEQ-mU-KXT" secondAttribute="trailing" id="90x-Zn-sFp"/>
-                                                <constraint firstAttribute="bottom" secondItem="tEQ-mU-KXT" secondAttribute="bottom" id="PI2-qt-ZL2"/>
-                                                <constraint firstItem="tEQ-mU-KXT" firstAttribute="leading" secondItem="CsM-PD-eB2" secondAttribute="leading" id="vPJ-xW-717"/>
+                                                <constraint firstItem="Ijw-DG-8vd" firstAttribute="top" secondItem="bTe-0z-Xu0" secondAttribute="top" id="FD3-tg-9JS"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ijw-DG-8vd" secondAttribute="trailing" id="J75-fu-NqM"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ijw-DG-8vd" secondAttribute="bottom" id="U2q-fh-GDC"/>
+                                                <constraint firstItem="Ijw-DG-8vd" firstAttribute="leading" secondItem="bTe-0z-Xu0" secondAttribute="leading" id="YVJ-2n-oXe"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="408" height="156"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -144,7 +143,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="listCollection" destination="ySX-UY-4Ab" id="r7V-d5-9jR"/>
+                        <outlet property="listCollection" destination="ehs-FS-GQA" id="7Wl-dw-lUU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0h-Uc-WAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

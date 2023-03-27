@@ -10,8 +10,7 @@ import UIKit
 
 class CollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    @IBOutlet weak var listCollection: UICollectionView!
-    
+    @IBOutlet weak var listCollection: UICollectionViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +20,8 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let firstCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
-        
-        
-        
+        let firstCell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCell", for: indexPath) as! NewsCell
+        firstCell.newsImage.image = UIImage
         
         return firstCell
     }
